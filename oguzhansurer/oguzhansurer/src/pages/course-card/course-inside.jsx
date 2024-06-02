@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
 import Footer from "../../layouts/footer/footer";
 import { Tag, Segmented } from "antd";
-import WhoAreWe from "../main-page/who-are-we";
 import Section from "../course-inside/section";
 import { MessageCircleMore } from "lucide-react";
 import CourseVeriable from "../courses/courseVeriable";
+import Steps from "./steps";
 
 const CourseInside = () => {
   const { id } = useParams();
@@ -58,7 +58,7 @@ const CourseInside = () => {
             </div>
           </div>
           <div className="course-content">
-            <WhoAreWe />
+            <Steps />
           </div>
         </div>
         <Footer />
