@@ -83,17 +83,19 @@ const LoginForm = () => {
                 justifyContent: "end",
               }}
             >
-              <Button
-                type="primary"
-                htmlType="submit"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                Sign In
-              </Button>
+              <Link to={"/courses"}>
+                <Button
+                  type="primary"
+                  htmlType="submit"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  Sign In
+                </Button>
+              </Link>
             </div>
             <p style={{ marginTop: "20px" }}>
               Don't have an account?{" "}
